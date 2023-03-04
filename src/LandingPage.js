@@ -66,21 +66,6 @@ export default function LandingPage() {
       <Content>
         <Menu>
           <li>
-            {/* <img src={Logo} alt="title" /> */}
-          </li>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/">Download</a>
-          </li>
-          <li>
-            <a href="/">App</a>
-          </li>
-          <li>
-            <a href="/login">Login</a>
-          </li>
-          <li>
             <button>Get Started</button>
           </li>
         </Menu>

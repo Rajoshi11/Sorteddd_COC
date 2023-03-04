@@ -38,7 +38,7 @@ function Login() {
   return (
     <div className={styles.container}>
       <div className={styles.innerBox}>
-        <h1 className={styles.heading}>Log In</h1>
+      <h1 style={{color: 'black', fontSize: '40px', paddingLeft: '130px'}}>Log In</h1>
 
         <InputControl
           label="Email"

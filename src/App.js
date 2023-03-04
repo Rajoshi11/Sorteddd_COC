@@ -6,10 +6,12 @@ import Login from './pages/Login/Login';
 import Signup from './pages/Signup/Signup';
 import LandingPage from './LandingPage';
 import Swiper from './pages/Swiper/Swiper';
+import Navbar from './components/Navbar/Navbar';
 
 export default function App() {
   return (
     <BrowserRouter>
+    <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<Login />} />

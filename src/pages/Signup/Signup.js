@@ -4,10 +4,11 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 
 import InputControl from "../InputControl/InputControl";
 import { auth } from "../../firebase";
-
 import styles from "./Signup.module.css";
+import UploadForm from "../../components/UploadForm";
 
 function Signup() {
+  const [selectedImg, setSelectedImg] = useState(null);
   const navigate = useNavigate();
   const [values, setValues] = useState({
     name: "",
@@ -43,8 +44,9 @@ function Signup() {
   return (
     <div className={styles.container}>
       <div className={styles.innerBox}>
-        <h1 className={styles.heading}>Sign Up</h1>
-
+        <h1 style={{color: 'black', fontSize: '40px', paddingLeft: '130px'}}>Sign Up</h1>
+        <div style={{display: 'flex', flexDirection: 'row-reverse'}}><UploadForm /></div>
+        <div>
         <InputControl
           label="Name"
           placeholder="Enter your name"
@@ -69,6 +71,7 @@ function Signup() {
             setValues((prev) => ({ ...prev, pass: event.target.value }))
           }
         />
+        </div>
 
         <div className={styles.footer}>
           <b className={styles.error}>{errorMsg}</b>
