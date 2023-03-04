@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Spline from "@splinetool/react-spline";
 import styled from "styled-components";
-import "./styles.css";
 import TrackVisibility from 'react-on-screen';
+import ReactCompareImage from 'react-compare-image';
+import img1 from './assets/before.png'
+import img2 from './assets/after.png'
 
 export default function App() {
   const [loopNum, setLoopNum] = useState(0);
@@ -47,7 +49,16 @@ export default function App() {
   }
   return (
     <Wrapper>
-      <Spline scene="https://prod.spline.design/0au9Qy8Tn2a5MENt/scene.splinecode" />
+      <div
+        style={{
+          backgroundSize: 'cover',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: '#fba4c4',
+          height: '100vh'
+        }}
+      ><Spline scene="https://prod.spline.design/0au9Qy8Tn2a5MENt/scene.splinecode" /></div>
       <Social>
         <div />
       </Social>
@@ -87,6 +98,18 @@ export default function App() {
            Download now!
         </button>
       </Content>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: '#fba4c4',
+          height: '100vh',
+          overflow:'hidden'
+        }}
+      >    
+    <ReactCompareImage style={{ width:'20px', height:'20px'}} leftImage={img1} rightImage={img2} />
+      </div>
     </Wrapper>
   );
 }
@@ -149,7 +172,7 @@ const Content = styled.div`
     margin: 0;
     max-width: 500px;
     pointer-events: auto;
-    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 10px 30px rgb(155, 30, 76);;
 
     @media (max-width: 1024px) {
       font-size: 60px;
