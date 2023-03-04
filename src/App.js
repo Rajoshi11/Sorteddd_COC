@@ -58,7 +58,7 @@ export default function App() {
           backgroundColor: '#fba4c4',
           height: '100vh'
         }}
-      ><Spline scene="https://prod.spline.design/0au9Qy8Tn2a5MENt/scene.splinecode" /></div>
+      ><Spline scene="https://prod.spline.design/0au9Qy8Tn2a5MENt/scene.splinecode" style={{height:'100vh', position: 'absolute', zIndex:1 }}/></div>
       <Social>
         <div />
       </Social>
@@ -104,12 +104,16 @@ export default function App() {
           justifyContent: 'center',
           alignItems: 'center',
           backgroundColor: '#fba4c4',
-          height: '100vh',
-          overflow:'hidden'
+          height: '50vh',
+          overflow:'hidden',
+          width: '100vh',
+          padding: '10px'
         }}
-      >    
-    <ReactCompareImage style={{ width:'20px', height:'20px'}} leftImage={img1} rightImage={img2} />
-      </div>
+      >
+    {/* <div >      */}
+    <ReactCompareImage style={{ width:'50px', height:'50px'}} leftImage={img1} rightImage={img2} withResizeFeel= "false" />
+    </div>  
+    {/* </div> */}
     </Wrapper>
   );
 }

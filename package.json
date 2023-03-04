@@ -12,6 +12,7 @@
     "react-compare-image": "^3.3.0",
     "react-dom": "^18.2.0",
     "react-on-screen": "^2.1.1",
+    "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.8",
     "web-vitals": "^2.1.4"
@@ -39,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
   }
 }
