@@ -7,6 +7,7 @@ import Signup from './pages/Signup/Signup';
 import LandingPage from './LandingPage';
 import Swiper from './pages/Swiper/Swiper';
 import Navbar from './components/Navbar/Navbar';
+import WebcamCapture from './components/Webcam';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/swiper" element={<Swiper />} />
+          <Route path="/verify" element={<WebcamCapture />} />
         </Routes>
     </BrowserRouter>
   )
