@@ -64,11 +64,6 @@ export default function LandingPage() {
         <div />
       </Social>
       <Content>
-        <Menu>
-          <li>
-            <button>Get Started</button>
-          </li>
-        </Menu>
 
         <TrackVisibility>
             {({ isVisible }) =>
@@ -81,7 +76,7 @@ export default function LandingPage() {
           </TrackVisibility>
           <p style={{fontSize: '30px'}}>It is never too late to fall in love!</p>
         <button>
-           Download now!
+           Get Started
         </button>
       </Content>
       <div

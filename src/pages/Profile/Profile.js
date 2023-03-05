@@ -1,5 +1,6 @@
 import React from 'react'
 import './Profile.css'
+import ReactStoreIndicator from 'react-score-indicator'
 
 const Profile = (props) => {
     return (
@@ -33,6 +34,10 @@ const Profile = (props) => {
               <span className="index">146</span>
             </div>
           </main>
+          <ReactStoreIndicator
+        value={50}
+        maxValue={100}
+      />
         </div>
     )
   }
